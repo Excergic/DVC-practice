@@ -9,6 +9,9 @@ data = {"Name" : ["Alice", "Bob", "Charlie"],
 
 df = pd.DataFrame(data)
 
+new_row_loc = {"Name": "GF1", "Age": 21, "City": "San Francisco"}
+df.loc[len(df.index)] = new_row_loc
+
 
 
 data_dir = "data"
